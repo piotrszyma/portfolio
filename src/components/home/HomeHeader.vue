@@ -1,19 +1,21 @@
 <template>
-  <div>
+  <div class="wrapper">
     <h1>Piotr Szyma</h1>
     <h2>Computer Science enthusiast</h2>
   </div>
 </template>
 <style lang="scss" scoped>
   @import '../../assets/scss/_mixins.scss';
-
-  div {
-    margin-top: 33%;
-    margin-bottom: 50%;
+  h1 {
+    width: auto;
   }
 
   h2 {
     font-size: 0.9rem;
+  }
+  
+  div {
+      margin-bottom: 4rem;
   }
 </style>
 

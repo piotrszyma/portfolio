@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <home-header/>
     <home-links/>
     <home-background/>
@@ -18,3 +18,4 @@ export default {
   }
 };
 </script>
+
