@@ -11,7 +11,12 @@ const routes = [
     name: 'bio',
     path: '/bio',
     component: Bio
-  }
+  },
+  {
+    name: 'github',
+    path: '/github',
+    beforeEnter() { location.href = 'http://github.com/piotrszyma' }
+},
 ]
 
 export default new VueRouter({

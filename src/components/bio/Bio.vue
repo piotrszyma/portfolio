@@ -5,22 +5,25 @@
       v-for="entry in entries" 
       :entry="entry"
       :key="entry.title"/>
-      <!-- <div class="entry" v-for="entry in entries" :key="entry" >
-        <p>{{ entry.time }}</p>
-        <p class="title">{{ entry.title }}</p>
-        <p>{{ entry.place }}</p>
-        <p>{{ entry.description }}</p>
-      </div> -->
     </div>
+    <router-link 
+      :to="{ name: 'home' }"
+      class="link"      
+      >
+      Back
+    </router-link>
+    <bio-background/>
   </div>
 </template>
 <script>
-import BioEntry from './BioEntry.vue';
+import BioEntry from "./BioEntry.vue";
+import BioBackground from "./BioBackground.vue";
 
 export default {
   name: "Biography",
   components: {
-    BioEntry
+    BioEntry,
+    BioBackground
   },
   data: () => ({
     entries: [
@@ -45,8 +48,11 @@ export default {
 .container {
   color: black;
   -webkit-font-smoothing: antialiased;
-  background-color: rgb(219, 219, 219);
 }
+.entry:first-child {
+  padding-top: 0;
+}
+
 .entry {
   padding: 2rem 0;
 }
