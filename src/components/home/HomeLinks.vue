@@ -11,17 +11,14 @@
         </router-link>
       </li>
       <li>
-        <router-link 
-          :to="{ name: 'github' }"
-          tag="a"
-          class="link"      
-        >
-          check my github
-        </router-link>
+        <a 
+        class="link"        
+        href="http://github.com/piotrszyma"
+        @click.prevent="handleLinkClick">check my github</a>
       </li>
       <li>
         <a 
-        class="link"        
+        class="link"     
         href="mailto:thompson2908@gmail.com">
         contact me
         </a>
@@ -29,6 +26,12 @@
     </ul>
   </div>
 </template>
-<style lang="scss">
-
-</style>
+<script>
+export default {
+  methods: {
+    handleLinkClick: event => {
+      location.href = event.target.href;
+    }
+  }
+};
+</script>

@@ -1,12 +1,20 @@
 <template>
-  <transition name="switch">
+  <transition :name="transitionName">
     <router-view></router-view>
   </transition>
 </template>
 
 <script>
 export default {
-  name: "app"
+  name: "app",
+  data: () => ({
+    transitionName: 'switch'
+  }),
+  watch: {
+    $route(to) {
+      this.transitionName = to.path === '/' ? "inverted-switch" : "switch";
+    }
+  }
 };
 </script>
 

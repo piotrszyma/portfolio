@@ -1,29 +1,24 @@
-.curtain {
-  background-color: blue;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+@keyframes inverted-slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
-// .curtain-enter {
-//   animation-name: 'slide-in';
-//   animation-duration: 1s;
-// }
-
-// .curtain-leave {
-//   animation-name: 'slide-out';
-//   animation-duration: 1s;
-// }
-
-// .curtain-left {
-//   transform: translateX(100%);
-// }
+@keyframes inverted-slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
 
 @keyframes slide-in {
   from {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
   to {
     transform: translateX(0);
@@ -35,14 +30,36 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
 
-.switch-enter-active, .switch-leave-active {
-  transition: opacity .5s;
+@mixin animation {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
   position: fixed;
+  width: 100vw;
+  height: 100vh;
 }
-.switch-enter, .switch-leave-to /* .switch-leave-active below version 2.1.8 */ {
-  opacity: 0;
+
+.switch-enter-active {
+  animation-name: 'slide-in';
+  @include animation;
 }
+
+.switch-leave-active {
+  animation-name: 'slide-out';
+  @include animation;
+}
+
+.inverted-switch-enter-active {
+  animation-name: 'inverted-slide-in';
+  @include animation;
+}
+
+.inverted-switch-leave-active {
+  animation-name: 'inverted-slide-out';
+  @include animation;
+}
+
+

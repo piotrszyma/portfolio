@@ -4,8 +4,9 @@
     <h2>Computer Science enthusiast</h2>
   </div>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
   @import '../../assets/scss/_mixins.scss';
+
   h1 {
     width: auto;
   }

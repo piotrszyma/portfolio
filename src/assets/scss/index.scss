@@ -4,15 +4,17 @@
 html, body {
   font-size: 100%;
   height: 100%;
-  // @include for-size(medium) {
-  //   overflow: hidden;
-  // }
 }
 
 body, h1, h2 {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  color: white;
 }
 
 ul, ul li {
@@ -33,13 +35,12 @@ a {
   color: inherit;
 }
 
-body {
-  font-family: 'IBM Plex Mono', monospace;
-  color: white;
+.container {
+  padding: 10%;
 }
 
-.container {
-  padding: 12%;
+.home {
+  z-index: -1;
 }
 
 .link {

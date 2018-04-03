@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container bio">
     <div class="wrapper">
       <bio-entry 
       v-for="entry in entries" 

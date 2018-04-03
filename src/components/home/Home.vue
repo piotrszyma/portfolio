@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container home">
     <home-header/>
     <home-links/>
     <home-background/>
