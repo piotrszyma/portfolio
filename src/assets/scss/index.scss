@@ -37,6 +37,8 @@ a {
 
 .container {
   padding: 10%;
+  color: black;
+  -webkit-font-smoothing: antialiased;
 }
 
 .home {
@@ -50,4 +52,12 @@ a {
 .link:hover {
   cursor: pointer;
   border-bottom: 0.1rem solid currentColor;
+}
+
+.entry {
+  padding: 2rem 0;
+}
+
+.entry:first-child {
+  padding-top: 0;
 }

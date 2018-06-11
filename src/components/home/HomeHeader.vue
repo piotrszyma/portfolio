@@ -5,8 +5,6 @@
   </div>
 </template>
 <style lang="scss">
-  @import '../../assets/scss/_mixins.scss';
-
   h1 {
     width: auto;
   }

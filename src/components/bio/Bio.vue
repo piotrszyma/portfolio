@@ -43,17 +43,3 @@ export default {
   })
 };
 </script>
-
-<style lang="scss" scoped>
-.container {
-  color: black;
-  -webkit-font-smoothing: antialiased;
-}
-.entry:first-child {
-  padding-top: 0;
-}
-
-.entry {
-  padding: 2rem 0;
-}
-</style>
