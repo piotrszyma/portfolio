@@ -1,21 +1,26 @@
 <template>
-  <div class="container home">
+  <div class="container home" ref="container">
     <home-header/>
-    <home-links/>
-    <home-background/>
+    <home-menu/>
+    <home-video/>
   </div>
 </template>
 <script>
-import HomeBackground from "./HomeBackground.vue";
-import HomeLinks from "./HomeLinks.vue";
 import HomeHeader from "./HomeHeader.vue";
+import HomeMenu from "./HomeMenu.vue";
+import HomeVideo from "./HomeVideo.vue";
 
 export default {
   components: {
     HomeHeader,
-    HomeLinks,
-    HomeBackground
+    HomeMenu,
+    HomeVideo
   }
 };
 </script>
+<style lang="scss" scoped>
+.home {
+  color: white;
+}
+</style>
 

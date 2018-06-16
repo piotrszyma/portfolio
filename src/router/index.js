@@ -1,6 +1,7 @@
 import VueRouter from 'vue-router';
-import Home from '@/components/home/Home.vue';
-import Bio from '@/components/bio/Bio.vue';
+
+const Home = () => import('@/components/home/Home.vue');
+const Bio = () => import('@/components/bio/Bio.vue');
 
 const routes = [{
     name: 'home',

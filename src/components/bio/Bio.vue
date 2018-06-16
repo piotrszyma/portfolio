@@ -1,29 +1,24 @@
 <template>
   <div class="container bio">
-    <div class="wrapper">
-      <bio-entry 
-      v-for="entry in entries" 
-      :entry="entry"
-      :key="entry.title"/>
-    </div>
-    <router-link 
+    <bio-entry
+    v-for="entry in entries"
+    :entry="entry"
+    :key="entry.title"/>
+    <router-link
       :to="{ name: 'home' }"
-      class="link"      
+      class="link"
       >
       Back
     </router-link>
-    <bio-background/>
   </div>
 </template>
 <script>
 import BioEntry from "./BioEntry.vue";
-import BioBackground from "./BioBackground.vue";
 
 export default {
   name: "Biography",
   components: {
-    BioEntry,
-    BioBackground
+    BioEntry
   },
   data: () => ({
     entries: [
@@ -43,3 +38,8 @@ export default {
   })
 };
 </script>
+<style lang="scss" scoped>
+ .container {
+   background-color: #fffdf4;
+ }
+</style>

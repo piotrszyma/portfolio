@@ -1,10 +1,10 @@
 <template>
-  <div class="wrapper">
+  <div>
     <h1>Piotr Szyma</h1>
     <h2>Computer Science enthusiast</h2>
   </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
   h1 {
     width: auto;
   }
@@ -12,9 +12,9 @@
   h2 {
     font-size: 0.9rem;
   }
-  
+
   div {
-      margin-bottom: 4rem;
+    margin-bottom: 4rem;
   }
 </style>
 
