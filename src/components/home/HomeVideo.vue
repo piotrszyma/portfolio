@@ -1,7 +1,8 @@
 <template>
-  <video playsinline autoplay muted loop poster="mobile.png">
-    <source src="@/assets/video/video.webm" type="video/webm">
-    <source src="@/assets/video/video.mp4" type="video/mp4">
+  <video playsinline autoplay muted loop>
+    <source src="@/assets/video/vid.webm" type="video/webm">
+    <source src="@/assets/video/vid.mp4" type="video/mp4">
+    <img src="@/assets/video/vid.png">
   </video>
 </template>
 <style scoped>
