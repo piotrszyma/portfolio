@@ -4,21 +4,18 @@
     v-for="entry in entries"
     :entry="entry"
     :key="entry.title"/>
-    <router-link
-      :to="{ name: 'home' }"
-      class="link"
-      >
-      Back
-    </router-link>
+    <url :to="{ name: 'home' }" internal dark>Back</url>
   </div>
 </template>
 <script>
-import BioEntry from "./BioEntry.vue";
+import BioEntry from './BioEntry.vue';
+import Url from '../Url.vue';
 
 export default {
   name: "Biography",
   components: {
-    BioEntry
+    BioEntry,
+    Url
   },
   data: () => ({
     entries: [

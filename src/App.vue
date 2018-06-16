@@ -1,14 +1,28 @@
 <template>
-  <transition name="fade">
-    <keep-alive>
-      <router-view/>
-    </keep-alive>
+  <transition @before-enter="beforeEnter" @after-leave="afterLeave" name="fade">
+    <router-view/>
   </transition>
 </template>
 
 <script>
 export default {
   name: "app",
+  data: () => ({
+    body: null
+  }),
+  methods: {
+    beforeEnter(el) {
+      this.body.style.overflow = 'hidden'
+      console.log('beforeEnter');
+    },
+    afterLeave(el) {
+      this.body.style = '';
+      console.log('afterLeave');
+    }
+  },
+  mounted () {
+    this.body = document.querySelector('body');
+  }
 };
 </script>
 
@@ -23,14 +37,4 @@ export default {
   -webkit-font-smoothing: antialiased;
 }
 
-.link {
-  padding-bottom: 0.2rem;
-  transition: 0.2s;
-  border-bottom: 0.1rem solid transparent;
-
-  &:hover {
-    cursor: pointer;
-    border-bottom: 0.1rem solid currentColor;
-  }
-}
 </style>
