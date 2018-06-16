@@ -11,13 +11,11 @@ export default {
     body: null
   }),
   methods: {
-    beforeEnter(el) {
+    beforeEnter() {
       this.body.style.overflow = 'hidden'
-      console.log('beforeEnter');
     },
-    afterLeave(el) {
+    afterLeave() {
       this.body.style = '';
-      console.log('afterLeave');
     }
   },
   mounted () {
