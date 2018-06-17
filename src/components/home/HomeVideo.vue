@@ -2,7 +2,7 @@
   <video playsinline autoplay muted loop>
     <source src="@/assets/video/vid.webm" type="video/webm">
     <source src="@/assets/video/vid.mp4" type="video/mp4">
-    <img src="@/assets/video/vid.png">
+    <img src="@/assets/video/vid.png" alt="Background video">
   </video>
 </template>
 <style scoped>
