@@ -20,7 +20,13 @@ export default {
   data: () => ({
     entries: [
       {
-        time: "2017 - now",
+        time: "08.2018 - now",
+        title: "Backend Engineer",
+        place: "Google (via Hays)",
+        description: "Maintenance of Django based web application"
+      },
+      {
+        time: "07.2017 - 07.2018",
         title: "Python Web Application Working Student",
         place: "Nokia",
         description: "Creating rich web application using VueJS & Django"
