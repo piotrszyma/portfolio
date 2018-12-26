@@ -29,7 +29,6 @@ export default {
 
 .container {
   padding: 10%;
-  height: 100%;
   box-sizing: border-box;
   color: black;
   -webkit-font-smoothing: antialiased;
