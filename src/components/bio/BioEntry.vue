@@ -3,7 +3,7 @@
     <p class="time">{{ entry.time }}</p>
     <p class="title">{{ entry.title }}</p>
     <p class="place">{{ entry.place }}</p>
-    <p>{{ entry.description }}</p>
+    <p class="description">{{ entry.description }}</p>
   </div>
 </template>
 <script>
@@ -23,10 +23,11 @@ export default {
   }
   .time {
     margin: 0;
+    font-size: 0.8rem;
   }
 
   .title {
-    font-size: 1.0rem;
+    font-size: 0.9rem;
 
     @include for-size(medium) {
       font-size: 1.4rem;
@@ -35,6 +36,14 @@ export default {
 
   .place {
     font-size: 0.7rem;
+
+    @include for-size(medium) {
+      font-size: 1.1rem;
+    }
+  }
+
+  .description {
+    font-size: 0.8rem;
 
     @include for-size(medium) {
       font-size: 1.1rem;

@@ -32,6 +32,7 @@ export default {
   box-sizing: border-box;
   color: black;
   -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
 }
 
 </style>
