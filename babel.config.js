@@ -5,6 +5,8 @@ module.exports = function (api) {
     '@babel/preset-env',
   ];
   const plugins = [
+    '@babel/plugin-transform-runtime',
+    '@babel/plugin-syntax-dynamic-import',
   ];
 
   return {

@@ -1,6 +1,6 @@
 <template>
   <transition @before-enter="beforeEnter" @after-leave="afterLeave" name="fade">
-    <router-view/>
+    <router-view />
   </transition>
 </template>
 
@@ -12,14 +12,14 @@ export default {
   }),
   methods: {
     beforeEnter() {
-      this.body.style.overflow = 'hidden'
+      this.body.style.overflow = "hidden";
     },
     afterLeave() {
-      this.body.style = '';
+      this.body.style = "";
     }
   },
-  mounted () {
-    this.body = document.querySelector('body');
+  mounted() {
+    this.body = document.querySelector("body");
   }
 };
 </script>
@@ -34,5 +34,4 @@ export default {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
-
 </style>
