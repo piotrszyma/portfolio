@@ -1,15 +1,12 @@
 <template>
   <div class="container bio">
-    <bio-entry
-    v-for="entry in entries"
-    :entry="entry"
-    :key="entry.title"/>
+    <bio-entry v-for="entry in entries" :entry="entry" :key="entry.title" />
     <url :to="{ name: 'home' }" internal dark>Back</url>
   </div>
 </template>
 <script>
-import BioEntry from './BioEntry.vue';
-import Url from '../Url.vue';
+import BioEntry from "./BioEntry.vue";
+import Url from "../Url.vue";
 
 export default {
   name: "Biography",
@@ -23,17 +20,23 @@ export default {
         time: "08.2018 - now",
         title: "Backend Engineer",
         place: "Google (via Hays)",
-        description: "Maintenance of Django based web application"
+        description: "Web application using the Closure Library & Django"
       },
       {
         time: "07.2017 - 07.2018",
         title: "Python Web Application Working Student",
         place: "Nokia",
-        description: "Creating rich web application using VueJS & Django"
+        description: "Web application using VueJS & Django"
       },
       {
-        time: "2015 - now",
-        title: "Computer Science",
+        time: "2019 - now",
+        title: "Master's Degree, Computer Science",
+        place: "Wroclaw University of Technology",
+        description: "Faculty of Fundamental Problems of Technology"
+      },
+      {
+        time: "2015 - 2019",
+        title: "Bachelor's Degree, Computer Science",
         place: "Wroclaw University of Technology",
         description: "Faculty of Fundamental Problems of Technology"
       }
@@ -42,7 +45,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
- .container {
-   background-color: #fffdf4;
- }
+.container {
+  background-color: #fffdf4;
+}
 </style>
