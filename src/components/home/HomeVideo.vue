@@ -1,7 +1,6 @@
 <template>
-  <video playsinline webkit-playsinline webkitplaysinline autoplay muted loop>
+  <video autoplay muted loop poster="@/assets/video/vid.jpg">
     <source src="@/assets/video/vid.mp4" type="video/mp4">
-    <img src="@/assets/video/vid.jpg" alt="Background video">
   </video>
 </template>
 <style scoped>
