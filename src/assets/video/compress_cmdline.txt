@@ -1,3 +1,0 @@
-ffmpeg -i input.mp4 -c:v libvpx-vp9 -b:v 2M output.webm
-ffmpeg -i vid.mp4 -c:v libvpx-vp9 -b:v 0.5M -crf 28 output.webm
-ffmpeg -i vid.mp4  -c:v libvpx-vp9 -crf 28 -b:v 0.17M output2.webm
