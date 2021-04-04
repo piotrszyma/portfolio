@@ -3,7 +3,9 @@
     <p class="time">{{ entry.time }}</p>
     <p class="title">{{ entry.title }}</p>
     <p class="place">{{ entry.place }}</p>
-    <p class="description">{{ entry.description }}</p>
+    <p class="description" v-for="desc in entry.description" :key="desc">
+      {{ desc }}
+    </p>
   </div>
 </template>
 <script>
@@ -27,15 +29,18 @@ export default {
   }
 
   .title {
+    margin: 0.3rem 0;
     font-size: 0.9rem;
 
     @include for-size(medium) {
       font-size: 1.4rem;
+      letter-spacing: 80%;
     }
   }
 
   .place {
     font-size: 0.7rem;
+    margin-top: 0;
 
     @include for-size(medium) {
       font-size: 1.1rem;
@@ -44,9 +49,10 @@ export default {
 
   .description {
     font-size: 0.8rem;
+    margin: 0.2rem 0 0.2rem 0;
 
     @include for-size(medium) {
-      font-size: 1.1rem;
+      font-size: 0.8rem;
     }
   }
 </style>

@@ -18,27 +18,27 @@ export default {
     entries: [
       {
         time: "08.2018 - now",
-        title: "Backend Engineer",
+        title: "Software Engineer",
         place: "Google (via Hays)",
-        description: "Web application using the Closure Library & Django"
+        description: ["Web application using the Closure Library & Django", "Chrome Extension", "UI components library"]
       },
       {
         time: "07.2017 - 07.2018",
         title: "Python Web Application Working Student",
         place: "Nokia",
-        description: "Web application using VueJS & Django"
+        description: ["Web application using VueJS & Django"]
       },
       {
-        time: "2019 - now",
+        time: "2019 - 2020",
         title: "Master's Degree, Computer Science",
         place: "Wroclaw University of Technology",
-        description: "Faculty of Fundamental Problems of Technology"
+        description: ["Faculty of Fundamental Problems of Technology"]
       },
       {
         time: "2015 - 2019",
         title: "Bachelor's Degree, Computer Science",
         place: "Wroclaw University of Technology",
-        description: "Faculty of Fundamental Problems of Technology"
+        description: ["Faculty of Fundamental Problems of Technology"]
       }
     ]
   })

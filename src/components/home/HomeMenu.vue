@@ -2,9 +2,6 @@
   <div>
     <ul>
       <li>
-        <url to="http://til.piotrszyma.pl">today i've learned</url>
-      </li>
-      <li>
         <url :to="{ name: 'bio' }" internal>read my bio</url>
       </li>
       <li>
