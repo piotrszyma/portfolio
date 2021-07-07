@@ -15,9 +15,13 @@ export default {
 </script>
 <style lang="scss" scoped>
   @import '../../assets/scss/_mixins.scss';
+  p {
+    margin: 0;
+  }
 
   .entry {
     padding: 2rem 0;
+    max-width: 600px;
   }
 
   .entry:first-child {
@@ -49,7 +53,7 @@ export default {
 
   .description {
     font-size: 0.8rem;
-    margin: 0.2rem 0 0.2rem 0;
+    margin: 0.4rem 0 0.4rem 0;
 
     @include for-size(medium) {
       font-size: 0.8rem;

@@ -20,7 +20,7 @@ export default {
         time: "07.2021 - now",
         title: "Software Developer",
         place: "Opera",
-        description: ["Leading rewrite of existing Django templates based web app into a frontend service using VueJS & Django REST Framework"]
+        description: ["Leading rewrite of existing Django templates based web app into a frontend service using VueJS & backend service with Django REST Framework"]
       },
       {
         time: "08.2018 - 07.2021",
