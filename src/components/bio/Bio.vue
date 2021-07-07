@@ -17,10 +17,16 @@ export default {
   data: () => ({
     entries: [
       {
-        time: "08.2018 - now",
+        time: "07.2021 - now",
+        title: "Software Developer",
+        place: "Opera",
+        description: ["Leading rewrite of existing Django templates based web app into a frontend service using VueJS & Django REST Framework"]
+      },
+      {
+        time: "08.2018 - 07.2021",
         title: "Software Engineer",
         place: "Google (via Hays)",
-        description: ["Web application using the Closure Library & Django", "Chrome Extension", "UI components library"]
+        description: ["Web application using the Closure Library & Django", "Chrome Extension", "UI components library using Angular, RxJS & NgRx", "TypeScript readability"]
       },
       {
         time: "07.2017 - 07.2018",
