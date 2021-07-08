@@ -8,7 +8,7 @@
 export default {
   name: "app",
   data: () => ({
-    body: null
+    body: null,
   }),
   methods: {
     beforeEnter() {
@@ -16,11 +16,11 @@ export default {
     },
     afterLeave() {
       this.body.style = "";
-    }
+    },
   },
   mounted() {
     this.body = document.querySelector("body");
-  }
+  },
 };
 </script>
 
@@ -28,10 +28,7 @@ export default {
 @import "assets/scss/index.scss";
 
 .container {
-  padding: 10%;
-  box-sizing: border-box;
   color: black;
   -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
 }
 </style>
