@@ -1,10 +1,10 @@
 <template>
   <ul>
     <li>
-      <nav-link :to="{ name: 'resume' }" internal>read my resume</nav-link>
+      <nav-link to="https://www.linkedin.com/in/piotr-szyma-80b794a2/">linkedin</nav-link>
     </li>
     <li>
-      <nav-link to="http://github.com/piotrszyma">check my github</nav-link>
+      <nav-link to="https://github.com/piotrszyma">github</nav-link>
     </li>
     <li>
       <nav-link to="mailto:piotrszyma@outlook.com">contact me</nav-link>

@@ -2,7 +2,7 @@
   <div class="home">
     <main>
       <h1>Piotr Szyma</h1>
-      <h2>Computer Science enthusiast</h2>
+      <h2>Software Engineer</h2>
       <menu-items class="menu" />
     </main>
     <background-video />
