@@ -7,7 +7,7 @@
       <nav-link to="https://github.com/piotrszyma">github</nav-link>
     </li>
     <li>
-      <nav-link to="mailto:piotrszyma@outlook.com">contact me</nav-link>
+      <nav-link to="mailto:piotrszyma@outlook.com">email</nav-link>
     </li>
   </ul>
 </template>
